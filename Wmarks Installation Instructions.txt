@@ -1,0 +1,26 @@
+Introduction: the marks program allow windows users to create custom bookmarks to a file location by right-clicking on the filename in windows explorer, then access the bookmarked by running the "open" routine or simply start the program with the "start" routine. The wmarks program allows the bookmark database to be shared by users on a shared server.
+
+1. Create a system restore point
+http://windows.microsoft.com/en-US/windows7/Create-a-restore-point
+for Windows 7 instructions
+2. Copy entire contents of "Marks" repo to C:\Marks\
+
+*Note: This program is set up assuming access the user has access to a bookmark database shared 
+with other users located at "J:\program\Wmarks\Wmarks.csv". Replace all references to this location with the appropriate filepath for the wmarks.csv*
+
+3. Run Wmarks\all.reg
+   Click Yes to changes
+   (You may need to copy this file to your C: drive before it will run)
+
+Suggested:
+
+Create a "Marks" toolbar on your toolbar by right clicking the ribbon, toolbars>>new toolbar, then selecting the 
+C:\Marks folder.
+
+Assign the Open_mark.bat (open mark) and QOpen_mark.bat (start mark) to hot keys.
+To do this:
+1. Right-clicking the files in the C:\Marks folder.
+2. Select Send to >> desktop (create shortcut)
+3. Right click the new shortcut on your desktop and select properties.
+4. In the "Shortcut" tab, enter your preferred hotkey combination in the "Shortcut key" field. 
+   I suggest Ctrl+Alt+S for QOpen_mark.bat and Ctry+Alt+O for open_mark.bat
